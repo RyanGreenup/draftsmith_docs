@@ -8,9 +8,13 @@ export default defineConfig({
 		starlight({
 			title: 'DraftSmith Docs',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/RyanGreenup/draftsmith_rs',
 			},
 			sidebar: [
+        {
+          label: 'Installation Guides',
+          autogenerate: { directory: 'installation' },
+        },
 				{
 					label: 'Guides',
 					items: [
