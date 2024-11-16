@@ -15,6 +15,10 @@ export default defineConfig({
           label: 'Installation Guides',
           autogenerate: { directory: 'installation' },
         },
+        {
+          label: 'Usage Examples',
+          autogenerate: { directory: 'usage' },
+        },
 				{
 					label: 'Guides',
           autogenerate: { directory: 'guides' },
@@ -23,6 +27,22 @@ export default defineConfig({
 					// 	// { label: 'Example Guide', slug: 'guides/example' },
 					// ],
 				},
+        {
+          label: 'API Guide',
+          autogenerate: { directory: 'api' },
+        },
+        {
+          label: 'CLI Guide',
+          autogenerate: { directory: 'cli' },
+        },
+        {
+          label: 'TUI Guide',
+          autogenerate: { directory: 'tui' },
+        },
+        {
+          label: 'Web App Guide',
+          autogenerate: { directory: 'web-app' },
+        },
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
