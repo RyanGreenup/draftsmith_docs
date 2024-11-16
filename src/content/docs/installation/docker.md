@@ -36,3 +36,23 @@ The `docker-compose.yml` will create 3 services:
     - `web-app`
         - The web application communicating with the REST API
             - `scripts/web_entrypoint.sh` will source the virtual environment (created in the image) and run the web app
+
+## Interactions
+
+Users can jump inside the container to interact directly with the REST API or database if they wish:
+
+```bash
+docker compose exec -it app /bin/sh
+# Or
+docker compose exec -it app /bin/fish
+docker compose exec -it app /usr/sbin/nu
+```
+
+Or call the client without forwarding the REST API to the system:
+
+```bash
+# change this according to the docker-compose
+API_PORT=37242
+docker compose exec -it app draftsmith client --url 'http://localhost:'$API_PORT notes tree | jq
+```
+
