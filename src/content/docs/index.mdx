@@ -1,36 +1,51 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: DraftSmith Documentation
+description: Get started notetaking with DraftSmith
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Get started on your notetaking with DraftSmith
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/logo.png
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Installation Guide
+      link: /guides/installation/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: See GitHub Page
+      link: https://github.com/RyanGreenup/draftsmith_rs
       icon: external
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
+Drafsmith is a modern note-taking and task management system built with a focus
+on performance, type safety, and flexibility. It allows you to organize your
+thoughts, tasks and knowledge in a hierarchical structure, whilst maintaining
+relationships between different pieces of information through tags and parent-child
+relationships.
+
+Most importantly, DraftSmith is hackable! It allows both client side scripting
+in JavaScript with no HTML sanitisation and server side scripting in [Rhai](https://rhai.rs/)
+(with built-in functions directly from the server). This flexibility makes a
+great thinking space to tinker with ideas and automate workflows.
+
 ## Next steps
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
+<CardGrid>
+	<Card title="Screenshots" icon="open-book">
+		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	</Card>
+	<Card title="Docker Installation Guide" icon="pencil">
 		Edit `src/content/docs/index.mdx` to see this page change.
 	</Card>
-	<Card title="Add new content" icon="add-document">
+	<Card title="Manual Installation Guide" icon="add-document">
 		Add Markdown or MDX files to `src/content/docs` to create new pages.
 	</Card>
-	<Card title="Configure your site" icon="setting">
+	<Card title="Getting Started" icon="setting">
 		Edit your `sidebar` and other config in `astro.config.mjs`.
 	</Card>
-	<Card title="Read the docs" icon="open-book">
+	<Card title="Using Rhai" icon="open-book">
 		Learn more in [the Starlight Docs](https://starlight.astro.build/).
 	</Card>
 </CardGrid>
+
