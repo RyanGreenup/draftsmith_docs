@@ -9,6 +9,9 @@ this will include the API, database and Web App:
 git clone https://github.com/RyanGreenup/draftsmith_rs
 cd draftsmith_rs/containers/main
 docker compose up
+# must go down and up again to create the database
+docker compose down
+docker compose up -d
 ```
 
 ## Details
