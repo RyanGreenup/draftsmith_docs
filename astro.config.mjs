@@ -4,8 +4,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://ryangreenup.github.io/draftsmith_docs',
-  // base: '/draftsmith_docs',
+  site: 'https://ryangreenup.github.io',
+  base: '/draftsmith_docs',
 	integrations: [
 		starlight({
 			title: 'DraftSmith Docs',
