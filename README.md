@@ -11,4 +11,5 @@ in JavaScript with no HTML sanitisation and server side scripting in [Rhai](http
 (with built-in functions directly from the server). This flexibility makes a
 great thinking space to tinker with ideas and automate workflows.
 
-See the [documentation](https://draftsmith.github.io/draftsmith_docs) for more information.
+See the [documentation](https://ryangreenup.github.io/draftsmith_docs/) for more information.
+
