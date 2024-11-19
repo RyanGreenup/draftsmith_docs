@@ -1,11 +1,14 @@
 # Notes TUI Documentation
 
 ## Overview
-The TUI is a terminal-based interface for managing and viewing notes. It provides a hierarchical tree view of notes, content preview, tabs, cut/paste and popups for back/forward links.
+
+[The TUI](https://github.com/RyanGreenup/draftsmith_textual) is a terminal-based interface for managing and viewing notes. It provides a hierarchical tree view of notes, content preview, tabs, cut/paste and popups for back/forward links.
 
 The TUI includes a QT-based GUI preview for viewing notes in a graphical interface. For unix-based systems [^1731991580], this GUI can automatically sync with the TUI for real-time updates.
 
 [^1731991580]: An UNIX socket is used for communication between the TUI and GUI. When the TUI is launched, it creates a socket file in the `/tmp` directory. The GUI reads from this socket to receive updates from the TUI. When the GUI is launched, it connects to the socket file to receive updates from the TUI. When the TUI is closed, the socket file is removed. This has only been tested on Linux systems.
+
+![](./textual_screenshot.png)
 
 ## Features
 
